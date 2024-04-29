@@ -1,5 +1,8 @@
 import math
 
+''' Triangular Math lib '''
+''' by Karl Zander '''
+
 def get_nth_triangular(n):
     return (n * (n + 1)) // 2
 
