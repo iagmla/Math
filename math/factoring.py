@@ -4,7 +4,6 @@
 def factor(n):
     d = 2
     r = 1
-    x = n
     while r != 0:
         x = n // d
         r = n % d
