@@ -13,10 +13,8 @@ def is_prime(n):
     for i in range(2, iters):
         v = inverse(i, n)
         if v == 0:
-            zcount += 1
-    if zcount == 0:
-        return True
-    return False
+            return False
+    return True
 
 ''' Generate N bit Integer '''
 ''' Bit Length must be divisible by 8 '''
