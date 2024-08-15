@@ -1,6 +1,9 @@
 ''' Zander Algorithms '''
 ''' by Karl Zander '''
 
+import sys
+sys.set_int_max_str_digits(1000000000)
+
 from euclid import inverse
 
 ''' Zander Primality Test '''
@@ -18,7 +21,6 @@ def is_prime(n):
 
 ''' Generate N bit Integer '''
 ''' Bit Length must be divisible by 8 '''
-''' Cannot be greater than Python default maximum of 4300 bits '''
 
 def nbit_integer(n):
     num_bytes = n // 8
@@ -35,7 +37,6 @@ def nbit_integer(n):
 
 ''' Generate N bit Prime '''
 ''' Bit Length must be divisible by 8 '''
-''' Cannot be greater than Python default maximum of 4300 bits '''
 
 def nbit_prime(n):
     x = nbit_integer(n)
